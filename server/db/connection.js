@@ -3,7 +3,7 @@ require("dotenv").config();
 
 mongoose.set("strictQuery", false);
 
-const conn = mongoose.connect(process.env.ATLAS_URI)
+const conn = mongoose.connect(process.env.MONGO_URI)
     .then(db => {
         console.log("Databse Connected");
         return db;
